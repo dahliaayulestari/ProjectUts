@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#EAF4FF"
+    tools:context=".ui.about.AboutFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- Foto Profil -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/profile"
+            android:scaleType="centerCrop"
+            android:contentDescription="Foto profil mahasiswa"
+            app:shapeAppearanceOverlay="@style/CircleImage"
+            app:strokeColor="#2584E8"
+            app:strokeWidth="3dp" />
+
+        <!-- Nama Mahasiswa -->
+        <TextView
+            android:id="@+id/tvNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Dahlia Ayulestari"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:textColor="#173B70" />
+
+        <!-- Subjudul -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Informasi Mahasiswa"
+            android:textSize="16sp"
+            android:textColor="#4D7FB5" />
+
+        <!-- Kartu Informasi Tanpa Ikon -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/bg_profile_card"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:elevation="4dp">
+
+            <!-- Nama Lengkap -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NAMA LENGKAP"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#4D7FB5" />
+
+            <TextView
+                android:id="@+id/tvNamaDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Dahlia Ayulestari"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#173B70" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="#D9EAFC" />
+
+            <!-- NIM -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NOMOR INDUK MAHASISWA"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#4D7FB5" />
+
+            <TextView
+                android:id="@+id/tvNim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="6304240021"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#173B70" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="#D9EAFC" />
+
+            <!-- Email -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ALAMAT EMAIL"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#4D7FB5" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="dahliayulestari23@gmail.com"
+                android:textSize="14sp"
+                android:textColor="#173B70"
+                android:textIsSelectable="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="#D9EAFC" />
+
+            <!-- Nomor HP -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NOMOR HP"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#4D7FB5" />
+
+            <TextView
+                android:id="@+id/tvNoHp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Isi nomor HP kamu"
+                android:textSize="16sp"
+                android:textColor="#173B70"
+                android:textIsSelectable="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="#D9EAFC" />
+
+            <!-- Program Studi -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PROGRAM STUDI"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#4D7FB5" />
+
+            <TextView
+                android:id="@+id/tvProdi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Isi program studi kamu"
+                android:textSize="16sp"
+                android:textColor="#173B70" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="#D9EAFC" />
+
+            <!-- Jurusan -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="JURUSAN"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#4D7FB5" />
+
+            <TextView
+                android:id="@+id/tvJurusan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Isi jurusan kamu"
+                android:textSize="16sp"
+                android:textColor="#173B70" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="#D9EAFC" />
+
+            <!-- Perguruan Tinggi -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PERGURUAN TINGGI"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#4D7FB5" />
+
+            <TextView
+                android:id="@+id/tvPerguruanTinggi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Isi nama perguruan tinggi kamu"
+                android:textSize="16sp"
+                android:textColor="#173B70" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
